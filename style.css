@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Khand', sans-serif;
+    margin: 1;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0;
+    margin: 0 auto;
+} 
+
+h1.logo {
+    float: left;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+h1.logo a {
+    text-decoration: none;
+    color: #333;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 5%;
+    float: left;
+    padding: 20px;
+}
+
+header nav {
+    float: right;
+    margin: 40px 0 40px 0;
+    
+}
+
+header nav h2 {
+    height: 0;
+    margin: 0;
+    
+}
+
+header nav li {
+    float: left;
+    list-style-type: none;
+    margin: 10px 20px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+}
+
+header nav li a:hover {
+    color: royalblue;
+}
+
+#eraser {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#tileset li {
+    display: inline-block;
+    width: 50%;
+    height: 500px;
+    padding: 0px;
+    opacity: 0.6; /* css standard */
+    filter: alpha(opacity=60); /* internet explorer */
+}
+
+#tileset li:hover {
+    opacity: 1; /* css standard */
+    filter: alpha(opacity=100); /* internet explorer */
+}
+
+#tileset a {
+    text-decoration: none;
+    color: #eee;
+    padding: 1em;
+    
+}
+
+#tile1 {
+    background-color: purple;
+}
+
+#tile2 {
+    background-color: firebrick
+}
+
+#tile3 {
+    background-color: darkkhaki;
+}
+
+#tile4 {
+    background-color: coral;
+}
+
+#tile5 {
+    background-color: olive;
+}
+
+#tile6 {
+    background-color: seagreen;
+}
+
+footer {
+    padding: 30px 0;
+    background: #3b3b3b;
+    text-align: center;
+}
+
+footer:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+footer ul {
+    padding: 0;
+    list-style-type: none;
+    color: #eee;
+}
+
+footer li {
+    display: inline-block;
+}
+
+footer a {
+    color:;
+    text-decoration: none;
+}
+
+footer img {
+    width: 50%;
+}
+
+footer #rights {
+    margin-top: 1.5em;
+}

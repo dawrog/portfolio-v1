@@ -29,7 +29,6 @@ h1.logo a {
 .img-circle {
     border-radius: 50%;
     width: 5%;
-    float: left;
     padding: 20px;
 }
 
@@ -85,31 +84,52 @@ header nav li a:hover {
     text-decoration: none;
     color: #eee;
     padding: 1em;
-    
 }
 
 #tile1 {
-    background-color: purple;
+    background-color: firebrick;
+    background-image: url(img/about.png);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #tile2 {
-    background-color: firebrick
+    background-color: purple;
+    background-image: url(img/coding.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 115%;
 }
 
 #tile3 {
     background-color: darkkhaki;
+    background-image: url(img/blog.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90%;
 }
 
 #tile4 {
     background-color: coral;
+    background-image: url(img/copywriting.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 75%;
 }
 
 #tile5 {
     background-color: olive;
+    background-image: url(img/youtube.png);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #tile6 {
     background-color: seagreen;
+    background-image: url(img/philo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60%;
 }
 
 footer {

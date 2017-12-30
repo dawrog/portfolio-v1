@@ -223,6 +223,27 @@ header h1.logo {
 
 @media screen and (max-width: 480px) {
     
+.burger-nav {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: url(img/burger.png) no-repeat 145% center;
+    background-color: #f34949;
+    cursor: pointer;
+}
+    
+header nav ul {
+    overflow: hidden;
+    background: #505050;
+    height: 0;
+
+}
+    
+header nav ul.open {
+    height: auto;
+    
+}
+    
 #selling-points li {
     width: 80%;
     padding: 0 10%;

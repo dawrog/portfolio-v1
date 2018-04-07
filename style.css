@@ -3,9 +3,29 @@
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Khand', sans-serif;
-    margin: 1;
+    margin: 0;
+    height: 100%;
+    background-color: gray;
+}
+
+#page {
+    height: 100%;
+    position: relative;
+}
+
+#page-content {
+    padding-bottom: 140px;
+}
+
+div#content.site-content {
+    padding-bottom: 0;
 }
 
 .wrapper {
@@ -16,32 +36,63 @@ body {
 } 
 
 h1.logo {
-    float: left;
-    margin-top: 40px;
     text-decoration: none;
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    white-space: nowrap;
+    margin: 1% 0 0 1%;
 }
 
 h1.logo a {
-    text-decoration: none;
     color: #333;
+    text-decoration: none;
+}
+
+nav {
+	width: 50%;
+}
+
+nav ul li {
+    font-size: 13px;
 }
 
 .img-circle {
     border-radius: 50%;
-    width: 5%;
+    width: 9%; 
     padding: 20px;
-}
+    
+} 
 
 header nav {
     float: right;
-    margin: 40px 0 40px 0;
-    
 }
 
 header nav h2 {
     height: 0;
     margin: 0;
-    
+
+}
+
+header nav ul {
+	width: 70%;
+	height: 300px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+}
+
+div#sample {
+	margin-top: 0;
+	background: #3b3b3b;
+}
+
+#primary-menu {
+	width: 108.5%;
+	float: right;
+	position: relative;
+    padding: 10px;
+    background: #3b3b3b;
 }
 
 header nav li {
@@ -66,8 +117,37 @@ header nav li a:hover {
     clear: both;
 }
 
+#tileset {
+  	position: relative;
+  	overflow: hidden;
+  	min-width: 220px;
+  	//max-width: 310px;
+  	width: 100%;
+  	color: #000000;
+  	text-align: left;
+  	font-size: 16px;
+  	-webkit-perspective: 50em;
+  	perspective: 50em;
+}
+
+#tileset * {
+	-webkit-box-sizing: padding-box;
+  	box-sizing: padding-box;
+  	-webkit-transition: all 0.2s ease-out;
+  	transition: all 0.2s ease-out;
+}
+
+#tileset img {
+	height: 50%;
+	width: 50%;
+}
+
+#tileset ul {
+    list-style: none;
+}
+
 #tileset li {
-    display: inline-block;
+    float: left;
     width: 50%;
     height: 500px;
     padding: 0px;
@@ -81,61 +161,47 @@ header nav li a:hover {
 }
 
 #tileset a {
-    text-decoration: none;
+    text-decoration: none; 
     color: #eee;
     padding: 1em;
+    font-size: 150%;
 }
 
 #tile1 {
-    background-color: firebrick;
-    background-image: url(img/about.png);
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-color: purple;
 }
 
 #tile2 {
-    background-color: purple;
-    background-image: url(img/coding.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 115%;
+    background-color: firebrick
 }
 
 #tile3 {
     background-color: darkkhaki;
-    background-image: url(img/blog.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 90%;
 }
 
 #tile4 {
     background-color: coral;
-    background-image: url(img/copywriting.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 75%;
 }
 
 #tile5 {
     background-color: olive;
-    background-image: url(img/youtube.png);
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 #tile6 {
     background-color: seagreen;
-    background-image: url(img/philo.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 60%;
 }
 
 footer {
     padding: 30px 0;
     background: #3b3b3b;
     text-align: center;
+    bottom:0;
+} 
+
+footer.entry-footer, .comment-meta {
+	padding: 10px;
+	background: #eee;
+	margin-top: 5em;
 }
 
 footer:after {
@@ -165,6 +231,116 @@ footer img {
 
 footer #rights {
     margin-top: 1.5em;
+}
+
+/*//////////// GALLERY SNIPPET STYLE CSS //////////////*/
+
+.snip1246 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+}
+.snip1246 * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.snip1246 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.snip1246 figcaption {
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+}
+.snip1246 h2,
+.snip1246 p {
+  margin: 0 0 5px;
+}
+.snip1246 h2 {
+  font-weight: 600;
+}
+.snip1246 p {
+  font-size: 0.8em;
+}
+.snip1246 .price {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 20px;
+  padding: 0.2em 0em;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.snip1246 .add-to-cart {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+  padding: 0.2em 0.5em;
+  border: 2px solid #000000;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+}
+.snip1246 .add-to-cart:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.snip1246:after {
+  background-color: #ffffff;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+.snip1246:hover figcaption,
+.snip1246.hover figcaption {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.snip1246:hover:after,
+.snip1246.hover:after {
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0);
+  opacity: 0.9;
 }
 
 
